@@ -1,8 +1,8 @@
 <template>
-    <div class="bg-black ">
-        <span class="px-5"></span>
+    <div class="">
+        <span class="py-5"></span>
         <hr class="text-gray-dark">
-        <div class="flex flex-col gap-5 lg:flex-row p-5 md:p-10 justify-between items-center">
+        <div class="flex flex-col gap-5 lg:flex-row  justify-between items-center py-5">
             <div class="">
                 <img src="~/assets/images/logocoderank.svg" alt="Coding Rank White Logo">
                 <div></div>
