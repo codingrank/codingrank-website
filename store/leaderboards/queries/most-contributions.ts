@@ -1,5 +1,5 @@
 
-export function mostFollowedQuery(countries: string[] = [], limit = 40, after: string) {
+export function mostContributionsQuery(countries: string[] = [], limit = 40, after: string) {
     const locationFilter = countries.length > 0 ? `location:${countries.join(' location:')}` : '';
 
 
@@ -25,7 +25,11 @@ export function mostFollowedQuery(countries: string[] = [], limit = 40, after: s
                     }
                     repositories {
                         totalCount
+                    },
+                    repositoriesContributedTo(first: 100) {
+                        totalCount
                     }
+
                 }
             },
             pageInfo {
@@ -37,5 +41,3 @@ export function mostFollowedQuery(countries: string[] = [], limit = 40, after: s
     `
     return query;
 }
-
-

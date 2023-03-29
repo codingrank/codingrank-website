@@ -1,6 +1,8 @@
 import { defineStore } from 'pinia';
 import { User } from './models/user';
-import { mostFollowedQuery } from './queries/most-followed';
+import { getGraphQlQuery} from './queries/index';
+import {QueryType} from './models/query-type'
+
 
 
 export const useLeaderboardsStore = defineStore({
@@ -10,11 +12,12 @@ export const useLeaderboardsStore = defineStore({
         top3: [] as User[],
         hasNextPage: false,
         endCursor: '',
+        queryType : QueryType.none,
     }),
 
     actions: {
-        async fetchMostFollowed(countries: string[] = [], limit = 40, offset = 0) {
-            const query = mostFollowedQuery(countries, limit, offset);
+        async fetchLeaderboards(queryType: QueryType, countries: string[] = [], limit = 20) {
+            const query = getGraphQlQuery(queryType, countries, limit, this.endCursor);
             const response = await useAsyncQuery(query) as any;
             this.top3 = [];
             this.users = [];
