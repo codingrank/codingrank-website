@@ -5,6 +5,7 @@ export function mostContributionsQuery(countries: string[] = [], limit = 40, aft
 
     let textQuery = `${locationFilter}`;
     textQuery += ' followers:>0';
+    // textQuery += ' following:desc';
     
     const query = gql`
     query {
