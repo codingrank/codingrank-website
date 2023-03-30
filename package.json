@@ -8,9 +8,17 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
+  "dependencies": {
+    "three": "^0.140.0",
+    "three-globe": "^2.18.8",
+    "three-glow-mesh": "^0.1.2",
+    "webpack": "^5.77.0"
+  },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "6.6.3",
     "@types/node": "^18.15.10",
+    "file-loader": "^6.2.0",
+    "json-loader": "^0.5.7",
     "nuxt": "^3.3.2"
   }
 }
