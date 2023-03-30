@@ -4,7 +4,19 @@ export interface User {
     login: string;
     avatarUrl: string;
     bio: string;
-    url: string;
+    url: string; //icon
+    location: string;//icon + text
+    isHireable: boolean;
+    websiteUrl: string;
+
+    contributionsCollection: {
+        totalCommitContributions: number;
+        totalIssueContributions: number;
+        totalPullRequestContributions: number;
+        totalPullRequestReviewContributions: number;
+        totalRepositoriesWithContributedIssues: number;
+        totalRepositoriesWithContributedPullRequests: number;
+    }
     followers: {
         totalCount: number;
     };

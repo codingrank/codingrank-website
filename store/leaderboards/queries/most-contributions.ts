@@ -6,7 +6,7 @@ export function mostContributionsQuery(countries: string[] = [], limit = 40, aft
     let textQuery = `${locationFilter}`;
     textQuery += ' followers:>0';
     // textQuery += ' following:desc';
-    
+
     const query = gql`
     query {
         search(type: USER, query: "${textQuery}", first: ${limit}) {
@@ -18,6 +18,10 @@ export function mostContributionsQuery(countries: string[] = [], limit = 40, aft
                     avatarUrl
                     url
                     location
+                    isHireable
+                    websiteUrl
+
+
                     followers {
                         totalCount
                     }
@@ -29,6 +33,14 @@ export function mostContributionsQuery(countries: string[] = [], limit = 40, aft
                     },
                     repositoriesContributedTo(first: 100) {
                         totalCount
+                    }
+                    contributionsCollection {
+                        totalCommitContributions
+                        totalIssueContributions
+                        totalPullRequestContributions
+                        totalPullRequestReviewContributions
+                        totalRepositoriesWithContributedIssues
+                        totalRepositoriesWithContributedPullRequests
                     }
 
                 }
