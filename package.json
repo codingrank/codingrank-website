@@ -12,7 +12,10 @@
     "three": "^0.140.0",
     "three-globe": "^2.18.8",
     "three-glow-mesh": "^0.1.2",
-    "webpack": "^5.77.0"
+    "webpack": "^5.77.0",
+   "@pinia/nuxt": "^0.4.7",
+    "globe.gl": "^2.27.1",
+    "pinia": "^2.0.33"
   },
   "devDependencies": {
     "@nuxtjs/apollo": "^5.0.0-alpha.6",
@@ -22,10 +25,6 @@
     "json-loader": "^0.5.7",
     "nuxt": "^3.3.2",
     "vue-gtag-next": "^1.14.0"
-  },
-  "dependencies": {
-    "@pinia/nuxt": "^0.4.7",
-    "globe.gl": "^2.27.1",
-    "pinia": "^2.0.33"
   }
+ 
 }
