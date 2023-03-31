@@ -7,7 +7,4 @@ services:
     container_name: codingrank-website-container
     ports:
       - "3001:3001"
-    command: node ./.output/server/index.mjs
-    environment:
-      - NUXT_HOST=0.0.0.0
-      - NUXT_PORT=3001
+    command: yarn run preview

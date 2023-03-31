@@ -30,5 +30,6 @@ export default defineNuxtConfig({
     siteUrl: process.env.SITE_URL,
   },
 
+
 })
 
