@@ -3,7 +3,8 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/apollo',
-    '@pinia/nuxt'
+    '@pinia/nuxt',
+    'nuxt-simple-sitemap',
   ],
   apollo: {
     clients: {
@@ -23,6 +24,11 @@ export default defineNuxtConfig({
       GOOGLE_ANALYTICS_ID: process.env.GOOGLE_ANALYTICS_ID,
       ENVIRONMENT: process.env.ENVIRONMENT,
     }
-  }
+  },
+
+  sitemap: {
+    siteUrl: process.env.SITE_URL,
+  },
+
 })
 

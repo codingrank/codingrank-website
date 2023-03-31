@@ -9,22 +9,23 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@pinia/nuxt": "^0.4.7",
+    "globe.gl": "^2.27.1",
+    "pinia": "^2.0.33",
     "three": "^0.140.0",
     "three-globe": "^2.18.8",
     "three-glow-mesh": "^0.1.2",
-    "webpack": "^5.77.0",
-   "@pinia/nuxt": "^0.4.7",
-    "globe.gl": "^2.27.1",
-    "pinia": "^2.0.33"
+    "webpack": "^5.77.0"
   },
   "devDependencies": {
     "@nuxtjs/apollo": "^5.0.0-alpha.6",
+    "@nuxtjs/sitemap": "^2.4.0",
     "@nuxtjs/tailwindcss": "6.6.3",
     "@types/node": "^18.15.10",
     "file-loader": "^6.2.0",
     "json-loader": "^0.5.7",
     "nuxt": "^3.3.2",
+    "nuxt-simple-sitemap": "^2.2.0",
     "vue-gtag-next": "^1.14.0"
   }
- 
 }
