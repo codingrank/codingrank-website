@@ -7,8 +7,9 @@ WORKDIR /app
 COPY package.json ./
 COPY yarn.lock ./
 
-RUN yarn install
+RUN yarn global add pm2
 
+RUN yarn install 
 
 COPY . .
 
@@ -18,4 +19,4 @@ RUN yarn build
 EXPOSE 3001
 
 
-CMD [ "node", "./.output/server/index.mjs" ]
+CMD ["pm2", "start"]

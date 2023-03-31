@@ -10,7 +10,7 @@
         </div>
         <div class="flex flex-col gap-10 w-full md:w-1/2 pt-10">
           <h1 class="text-3xl font-bold md:text-4xl lg:text-6xl">
-            Hightlight active and innovative developers worldwide !
+            Hightlight active and innovative developers worldwide !!
           </h1>
           <p class="font-normal">
             Our platform highlights the most active and innovative developers
