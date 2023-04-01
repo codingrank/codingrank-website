@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  app:
+    build: .
+    image: codingrank-website
+    container_name: codingrank-website-container
+    ports:
+      - "3001:3001"
+    command: yarn run preview

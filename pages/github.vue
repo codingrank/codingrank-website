@@ -22,7 +22,7 @@ import { useLeaderboardsStore } from '~~/store/leaderboards';
 import {QueryType} from '~~/store/leaderboards/models/query-type';
 const boardStore = useLeaderboardsStore();
 let countries = [
-    'Togo',
+   'Togo'
 ]
 boardStore.fetchLeaderboards(QueryType.mostContributions, countries);
 const data = boardStore.users;
